@@ -45,6 +45,7 @@ public class TarefaController {
             t.setDescricao(dados.getDescricao());
             t.setFeita(dados.isFeita());
             t.setDataEntrega(dados.getDataEntrega());
+            t.setResponsavel(dados.getResponsavel()); // <-- atualização do campo responsavel
             Tarefa salvo = tarefaRepository.save(t);
             return ResponseEntity.ok(salvo);
         }).orElse(ResponseEntity.notFound().build());

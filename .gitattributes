@@ -1,2 +1,22 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Padroniza final de linha (importante entre Windows e Linux)
+* text=auto eol=lf
+
+# Garante que arquivos Java sejam tratados como texto
+*.java text
+
+# Arquivos de configuração
+*.properties text
+*.yml text
+
+# Evita diffs binários desnecessários
+*.jar binary
+*.class binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+
+# Documentação
+*.md text
+*.txt text

@@ -17,6 +17,8 @@ public class Tarefa {
 
     private LocalDate dataEntrega;
 
+    private String responsavel;
+
     public Tarefa() {}
 
     public Long getId() { return id; }
@@ -30,4 +32,7 @@ public class Tarefa {
 
     public LocalDate getDataEntrega() { return dataEntrega; }
     public void setDataEntrega(LocalDate dataEntrega) { this.dataEntrega = dataEntrega; }
+    
+    public String getResponsavel() { return responsavel; }
+    public void setResponsavel(String responsavel) { this.responsavel = responsavel;}
 }
